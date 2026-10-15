@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-circuit-breaker"
+version = "1.0.0"
+description = "Zero-dependency, resilient Circuit Breaker and Bulkhead mesh with adaptive sliding window failure tracking and jittered backoff."
+readme = "README.md"
+authors = [{ name = "Joel Rand", email = "joel.rand.dev@gmail.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["circuit-breaker", "resilience", "bulkhead", "fault-tolerance", "concurrency", "distributed-systems", "sre"]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Sodototive95/sentinel-circuit-breaker"
+Repository = "https://github.com/Sodototive95/sentinel-circuit-breaker"
+Issues = "https://github.com/Sodototive95/sentinel-circuit-breaker/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["circuit_breaker*"]
